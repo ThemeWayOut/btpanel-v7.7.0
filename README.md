@@ -6,7 +6,14 @@ btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 ```Bash
 curl -sSO https://raw.githubusercontent.com/zhucaidan/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 ```
+Crack
 
+```Bash
+sed -i "s|bind_user == 'True'|bind_user == 'XXXX'|" /www/server/panel/BTPanel/static/js/index.js
+```
+```Bash
+rm -f /www/server/panel/data/bind.pl
+```
 跳过登录框，以及破解插件等请自行搜索
 
 &nbsp;
