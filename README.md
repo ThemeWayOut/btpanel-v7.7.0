@@ -14,3 +14,13 @@ sed -i "s|bind_user == 'True'|bind_user == 'XXXX'|" /www/server/panel/BTPanel/st
 ```Bash
 rm -f /www/server/panel/data/bind.pl
 ```
+Host 'xxx.xx.xxx.xxx' is not allowed to connect to this MySQL server
+```Bash
+mysql -u root -h localhost -p
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost'
+WITH GRANT OPTION;
+mCREATE USER 'root'@'%' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'
+WITH GRANT OPTION;
+```
