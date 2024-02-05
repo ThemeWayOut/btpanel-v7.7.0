@@ -20,7 +20,7 @@ mysql -u root -h localhost -p123456
 CREATE USER 'root'@'localhost' IDENTIFIED BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost'
 WITH GRANT OPTION;
-mCREATE USER 'root'@'%' IDENTIFIED BY '123456';
+CREATE USER 'root'@'%' IDENTIFIED BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'
 WITH GRANT OPTION;
 ```
