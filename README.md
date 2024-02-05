@@ -16,11 +16,11 @@ rm -f /www/server/panel/data/bind.pl
 ```
 Host 'xxx.xx.xxx.xxx' is not allowed to connect to this MySQL server
 ```Bash
-mysql -u root -h localhost -p
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'some_pass';
+mysql -u root -h localhost -p123456
+CREATE USER 'root'@'localhost' IDENTIFIED BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost'
 WITH GRANT OPTION;
-mCREATE USER 'root'@'%' IDENTIFIED BY 'some_pass';
+mCREATE USER 'root'@'%' IDENTIFIED BY '123456';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'
 WITH GRANT OPTION;
 ```
