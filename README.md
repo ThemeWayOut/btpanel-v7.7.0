@@ -15,9 +15,9 @@ curl -sSO http://d.moe.ms/AAAAA/btpanel-v7.7.0/install/install_panel.sh && bash 
 
 1，屏蔽手机号
 
-``bash
+```bash
 sed -i "s|bind_user == 'True'|bind_user == 'XXXX'|" /www/server/panel/BTPanel/static/js/index.js
-``
+```
 2，删除强制绑定手机js文件
 
 ```bash
