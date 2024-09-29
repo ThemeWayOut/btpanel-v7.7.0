@@ -30,7 +30,7 @@ Dường dẫn tập tin：/www/server/panel/data/plugin.json
 Chuỗi tìm kiếm："endtime": -1 Thay thế tất cả bằng"endtime": 999999999999
 
 4. Khóa tệp plugin.json để ngăn việc tự động sửa sang phiên bản miễn phí.
-5. 
+
 ```bash 
 chattr +i /www/server/panel/data/plugin.json
 ```
